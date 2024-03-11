@@ -1,7 +1,5 @@
 import socket
 import subprocess
-from Compress import Compress
-
 
 HOST = '127.0.0.1'
 PORT = 12345
