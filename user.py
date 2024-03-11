@@ -17,10 +17,10 @@ print('\033[31m' + """
 while True:
     command = input('\033[31m' + '//=> ' + '\033[32m')
     if command != '':
-        client.send(command.encode())
-
         if command.lower() == 'exit':
             break
+
+        client.send(command.encode())
 
         response = client.recv(1024)
 
