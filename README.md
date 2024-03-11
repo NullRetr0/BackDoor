@@ -4,7 +4,7 @@
 
 The file server.py this is a virus that you have to throw at your victim and run it
 
-The file user.py It's us attacking who can control the victim's computer
+The file user.py who can control the victim's computer
 
 # Settings
 
