@@ -3,7 +3,7 @@ import subprocess
 from Compress import Compress
 
 
-HOST = '192.168.212.105'
+HOST = '127.0.0.1'
 PORT = 12345
 
 while True:
@@ -27,13 +27,6 @@ while True:
                     while data:
                         conn.send(data)
                         data = file.read(1024)
-            elif "compress" in w:
-                if w[3] == "0":
-                    Compress.compress(w[1], bool(w[2]), '')
-                    conn.send(b'Compress success')
-                else:
-                    Compress.compress(w[1], bool(w[2]), w[3])
-                    conn.send(b'Compress success')
             else:
                 cmd = subprocess.Popen(data, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
